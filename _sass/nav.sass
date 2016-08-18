@@ -1,0 +1,47 @@
+nav
+  background: #fff
+  position: relative
+  z-index: 4
+  &:after
+    clear: both
+  h2
+    margin: 0
+    padding: 10px 25px
+    font:
+      size: 2.5em
+      weight: 200
+    display: inline-block
+  ul
+    float: right
+    margin: 1.5em 0
+    li
+      display: inline-block
+      list-style: none
+      a
+        color: #444
+        text-decoration: none
+        padding: 20px
+        &:hover
+          color: #777
+  svg
+    display: none
+
+@media (max-width: 600px)
+  nav
+    svg
+      display: inline-block
+      float: right
+      margin: 1.5em 1em
+      cursor: pointer
+    ul
+      display: none
+      float: none
+      margin: 0
+      text-align: center
+      padding: 0 15px
+      li
+        display: block
+        padding: .7em 0
+        border-bottom: 1px solid #DDD
+    ul.show
+      display: block

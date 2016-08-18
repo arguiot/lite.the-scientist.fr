@@ -1,0 +1,17 @@
+//output:../_layouts/post.html
+
+<!DOCTYPE html>
+html(lang="fr")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title {{page.title}}
+		link(rel="icon" href="")
+		link(rel="stylesheet" href="{{site.baseurl}}/assets/css/articles.css")
+	body
+		header(style="background-image: url({{site.baseurl}}{{page.thumbnail}});")
+			.gradient
+			.title
+				h1 {{page.title}}
+		article
+			{{content}}

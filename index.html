@@ -1,0 +1,64 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link rel="icon" href="assets/img/icon.png">
+    <title>The scientist | La science n'attend pas !</title>
+  </head>
+  <body>
+    {% for ftrd in site.posts limit:1 %}
+      {% include featured.html %}
+    {% endfor %}
+    {% include nav.html %}
+    <div class="articles-desktop">
+      <a id="apple"></a>
+      <div class="apple-articles">
+        {% for apple in site.categories.apple limit:4%}
+          <a href="{{apple.url}}" title="{{apple.title}}" class="article-li apple"></a>
+          <div class="article-li apple" style="background: url({{site.url}}{{apple.thumbnail}}); background-size: cover; background-position: center;">
+            <div class="content">
+              <h3>{{apple.title}}</h3>
+              <p>{{apple.meta}}</p>
+              <span class="date">{{apple.date | date: "%d/%m/%y"}}</span>
+              <a href="{{apple.url}}" title="{{apple.title}}" id="read">Lire cet Article</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <a id="google"></a>
+      <div class="google-articles">
+        {% for google in site.categories.google limit:4%}
+          <a href="{{google.url}}" title="{{google.title}}" class="article-li google"></a>
+          <div class="article-li google" style="background: url({{site.url}}{{google.thumbnail}}); background-size: cover; background-position: center;">
+            <div class="content">
+              <h3>{{google.title}}</h3>
+              <p>{{google.meta}}</p>
+              <span class="date">{{google.date | date: "%d/%m/%y"}}</span>
+              <a href="{{google.url}}" title="{{google.title}}" id="read">Lire cet Article</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <a id="autre"></a>
+      <div class="apple-articles">
+        {% for autre in site.categories.autre limit:4%}
+          <a href="{{autre.url}}" title="{{autre.title}}" class="article-li apple"></a>
+          <div class="article-li apple" style="background: url({{site.url}}{{autre.thumbnail}}); background-size: cover; background-position: center;">
+            <div class="content">
+              <h3>{{autre.title}}</h3>
+              <p>{{autre.meta}}</p>
+              <span class="date">{{autre.date | date: "%d/%m/%y"}}</span>
+              <a href="{{autre.url}}" title="{{autre.title}}" id="read">Lire cet Article</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+  </html>
