@@ -28,3 +28,4 @@ foreach($bdd->query($sql) as $val)
     <article><?php echo $articleContent; ?></article>
   </body>
 </html>
+<?php } ?>
