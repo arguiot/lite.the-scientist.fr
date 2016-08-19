@@ -1,6 +1,6 @@
 <?php
 require_once('db.php');
-$sql = "SELECT * FROM blog_posts ORDER BY post_date DESC LIMIT 0, 1";
+$sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC LIMIT 0, 1";
 foreach($bdd->query($sql) as $val)
 {
   $articleTitle = $val['post_title'];
