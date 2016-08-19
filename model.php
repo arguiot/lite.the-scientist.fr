@@ -13,7 +13,7 @@
       require_once('nav.php');
     ?>
 <?php
-$sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post'";
+$sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC";
 foreach($bdd->query($sql) as $val)
 {
   $articleTitle = $val['post_title'];
@@ -23,7 +23,7 @@ foreach($bdd->query($sql) as $val)
   ?>
     <div class="articles-desktop">
           <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" class="article-li apple"></a>
-          <div class="article-li apple" style="background: url(<?php echo "/img.php?id=" . $articleID; ?>); background-size: cover; background-position: center;">
+          <div class="article-li apple" style="background: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>); background-size: cover; background-position: center;">
             <div class="content">
               <h3><?php echo $articleTitle; ?></h3>
               <p><?php echo $articleDesc; ?></p>
