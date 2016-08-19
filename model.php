@@ -12,6 +12,7 @@
       require_once('header.php');
       require_once('nav.php');
     ?>
+<div class="articles-desktop">
 <?php
 $sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC";
 foreach($bdd->query($sql) as $val)
@@ -21,7 +22,7 @@ foreach($bdd->query($sql) as $val)
   $articleDate = $val['post_date'];
   $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 150, "..."));
   ?>
-    <div class="articles-desktop">
+    
           <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" class="article-li apple"></a>
           <div class="article-li apple" style="background: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>); background-size: cover; background-position: center;">
             <div class="content">
@@ -32,10 +33,11 @@ foreach($bdd->query($sql) as $val)
             </div>
           </div>
       </div>
-    </div>
+    
     <?php
 }
 ?>
+</div>
     <?php
       require_once('footer.php');
     ?>
