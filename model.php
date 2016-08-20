@@ -21,7 +21,7 @@ foreach($bdd->query($sql) as $val)
   $articleTitle = $val['post_title'];
   $articleID = $val['ID'];
   $articleDate = $val['post_date'];
-  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 150, "..."));
+  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 100, "..."));
   ?>
     
           <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" class="article-li apple"></a>
@@ -33,7 +33,6 @@ foreach($bdd->query($sql) as $val)
               <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" id="read">Lire cet Article</a>
             </div>
           </div>
-      </div>
     
     <?php
 }
