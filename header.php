@@ -6,7 +6,7 @@ foreach($bdd->query($sql) as $val)
   $articleTitle = $val['post_title'];
   $articleID = $val['ID'];
   $articleDate = $val['post_date'];
-  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 150, "..."));
+  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 80, "..."));
   $articleContent = $val['post_content'];
   ?>
 <section id="featured" style="background-image: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>); height: 400px">

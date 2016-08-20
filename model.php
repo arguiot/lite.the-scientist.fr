@@ -27,11 +27,7 @@ foreach($bdd->query($sql) as $val)
           <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" class="article-li apple"></a>
           <div class="article-li apple" style="background: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>); background-size: cover; background-position: center;">
             <div class="content">
-              <?php if (strlen($articleTitle) > 30) {
-                 echo "<h4>";
-              } else {
-                echo "<h3>";
-              } echo $articleTitle; ?></h4></h3>
+              <h3><?php echo $articleTitle; ?></h3>
               <p><?php echo $articleDesc; ?></p>
               <span class="date"><?php echo $articleDate; ?></span>
               <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" id="read">Lire cet Article</a>
