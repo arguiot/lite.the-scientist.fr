@@ -15,13 +15,13 @@
 <div class="articles-desktop">
 <div class="apple-articles">
 <?php
-$sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC";
+$sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC lIMIT 0, 5";
 foreach($bdd->query($sql) as $val)
 {
   $articleTitle = $val['post_title'];
   $articleID = $val['ID'];
   $articleDate = $val['post_date'];
-  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 100, "..."));
+  $articleDesc = htmlspecialchars(mb_strimwidth($val['post_content'], 0, 50, "..."));
   ?>
     
           <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" class="article-li apple"></a>
