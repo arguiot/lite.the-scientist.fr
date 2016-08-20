@@ -1,0 +1,89 @@
+@import url(../fonts/Raleway/raleway.css);
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 300; src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 600; src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 700; src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 300; src: local("Source Sans Pro Light Italic"), local("SourceSansPro-LightIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6MAjkyiewWYrWZc50I8hK7I.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 400; src: local("Source Sans Pro Italic"), local("SourceSansPro-It"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 600; src: local("Source Sans Pro Semibold Italic"), local("SourceSansPro-SemiboldIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 700; src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Nnl6YROR5rHLkdLoHwoOWA.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+body {
+  font-family: "Source sans pro", "Helvetica", Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+header .gradient {
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.98) 99%, black 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.98) 99%, black 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.98) 99%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 );
+}
+header .title {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  color: #fff;
+}
+header .title h1 {
+  margin: 1em 0.5em;
+  font-weight: 200;
+  size: 4rem;
+}
+
+article {
+  width: 800px;
+  max-width: 80%;
+  margin: auto;
+  padding: 25px;
+}
+article h1 {
+  color: #888;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: lighter;
+}
+article h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+article .it {
+  font-style: italic;
+  display: block;
+}
+article p {
+  text-align: justify;
+}
+article .slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  margin-top: 50px;
+}
+article .slideshow img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+article .slideshow img.visible {
+  z-index: 5;
+  display: block;
+}
+
