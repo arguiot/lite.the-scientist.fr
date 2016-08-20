@@ -13,6 +13,7 @@
       require_once('nav.php');
     ?>
 <div class="articles-desktop">
+<div class="apple-articles">
 <?php
 $sql = "SELECT * FROM blog_posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY post_date DESC";
 foreach($bdd->query($sql) as $val)
@@ -37,6 +38,7 @@ foreach($bdd->query($sql) as $val)
     <?php
 }
 ?>
+</div>
 </div>
     <?php
       require_once('footer.php');
