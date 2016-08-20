@@ -17,9 +17,12 @@ foreach($bdd->query($sql) as $val)
     <title><?php echo $articleTitle; ?></title>
     <link rel="icon" href="assets/img/icon.png"/>
     <link rel="stylesheet" href="/assets/css/articles.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <header style="background-image: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>);">
+      <div class"back" ><a class="back" href="/"><i class="material-icons" class="arrow">arrow_back</i></a></div>
       <div class="gradient"></div>
       <div class="title">
         <h1><?php echo $articleTitle; ?></h1>

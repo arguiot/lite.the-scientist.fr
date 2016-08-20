@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('svg.menu').click(function () {
+          $('ul.nav').toggleClass('show');
+        });
+
+        $('nav ul li a').click(function () {
+          $('ul.nav').removeClass('show');
+        });
+      });
+
+    </script>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
     <link rel="icon" href="assets/img/icon.png">
     <title>The scientist | La science n'attend pas !</title>
@@ -33,7 +46,7 @@ foreach($bdd->query($sql) as $val)
               <a href="<?php echo "article.php?id=" . $articleID; ?>" title="<?php echo $articleTitle; ?>" id="read">Lire cet Article</a>
             </div>
           </div>
-    
+        
     <?php
 }
 ?>
