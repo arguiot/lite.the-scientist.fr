@@ -65,7 +65,7 @@ Vous pouvez ajouter de la CSS et de l'HTML pour rendre la page plus joli
 </style>
         <script type="text/javascript">
             
-            var time_set=setTimeout("window.location.replace(\"https://lite.the-scientist.fr/control.php\");", 5000)
+            var time_set=setTimeout("window.location.replace(\"https://lite.the-scientist.fr/main.php\");", 5000)
 
 
         </script>

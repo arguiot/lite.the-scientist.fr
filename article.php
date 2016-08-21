@@ -22,7 +22,7 @@ foreach($bdd->query($sql) as $val)
   </head>
   <body>
     <header style="background-image: url(<?php echo "/assets/img/" . $articleID . ".png"; ?>);">
-      <div class"back" ><a class="back" href="control.php"><i class="material-icons" class="arrow">arrow_back</i></a></div>
+      <div class"back" ><a class="back" href="main.php"><i class="material-icons" class="arrow">arrow_back</i></a></div>
       <div class="gradient"></div>
       <div class="title">
         <h1><?php echo $articleTitle; ?></h1>
