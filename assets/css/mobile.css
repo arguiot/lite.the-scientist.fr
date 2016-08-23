@@ -1,0 +1,86 @@
+@import url(../fonts/Raleway/raleway.css);
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 300; src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 600; src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 700; src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 300; src: local("Source Sans Pro Light Italic"), local("SourceSansPro-LightIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6MAjkyiewWYrWZc50I8hK7I.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 400; src: local("Source Sans Pro Italic"), local("SourceSansPro-It"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 600; src: local("Source Sans Pro Semibold Italic"), local("SourceSansPro-SemiboldIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face { font-family: 'Source Sans Pro'; font-style: italic; font-weight: 700; src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6Nnl6YROR5rHLkdLoHwoOWA.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+body { 
+  margin: 0; 
+  padding: 0; font-family: "Raleway", "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  overflow-X: hidden;
+   }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+nav { background: #fff; position: relative; z-index: 4; }
+nav:after { clear: both; }
+nav h2 { margin: 0; padding: 10px 25px; font-size: 2.5em; font-weight: 200; display: inline-block; }
+nav ul { float: right; margin: 1.5em 0; }
+nav ul li { display: inline-block; list-style: none; }
+nav ul li a { color: #444; text-decoration: none; padding: 20px; }
+nav ul li a:hover { color: #777; }
+nav svg { display: none; }
+@media (max-width: 600px) { nav svg { display: inline-block; float: right; margin: 1.5em 1em; cursor: pointer; }
+  nav ul { display: none; float: none; margin: 0; text-align: center; padding: 0 15px; }
+  nav ul li { display: block; padding: 0.7em 0; border-bottom: 1px solid #DDD; }
+  nav ul.show { display: block; } }
+
+
+.articles-desktop .article-li .content, .articles-desktop .article-li .content { transform: translateX(50vw); width: 100%; height: 100%; opacity: 0; position: relative; transition: all 500ms cubic-bezier(0.2, 0, 0.6, 1); }
+.articles-desktop .article-li .content h3, .articles-desktop .article-li .content h3 { font-weight: 200; margin: 0; }
+.articles-desktop .article-li .content p, .articles-desktop .article-li .content p { font-weight: 300; padding: 0 4rem 2rem; }
+.articles-desktop .article-li .content a, .articles-desktop .article-li .content a { color: black; text-decoration: none; }
+.articles-desktop .article-li .content a#read, .articles-desktop .article-li .content a#read { border: 1px solid black; border-radius: 50px; padding: 15px 20px; }
+.articles-desktop .article-li .content a#read, .articles-desktop .article-li .content a#read { background: rgba(0, 0, 0, 0.05); }
+.articles-desktop .article-li, .articles-desktop .article-li:hover { cursor: pointer; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
+.articles-desktop .article-li .content, .articles-desktop .article-li .content { transform: translateX(0vw); opacity: 1; }
+.article-desktop .article-li{
+  width: 100%;
+  height: 50vh;
+  z-index: 50;
+  max-width: 100%;
+}
+.title
+{
+  position: relative;
+  margin: auto;
+  position: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  opacity: 1;
+  color: #fff;
+}
+.desc
+{
+  position: relative;
+  margin: auto;
+  position: center; 
+}
+.content
+{
+  opacity: 1;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-X: hidden;
+  color: white;
+}
+
+/* grid */
+/* Grid variables */
+/* Grid */
+.grid { display: flex; width: 100%; flex-direction: column; }
+.grid .row { display: flex; margin: auto; margin-bottom: 0; justify-content: space-around; }
+
+.col { margin-right: auto; margin-left: auto;}
+.col:last-child { margin-right: auto; margin-left: auto;}
+
+.w-1-3 { width: 33.33%; }
