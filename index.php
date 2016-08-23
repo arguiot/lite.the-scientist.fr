@@ -1,6 +1,17 @@
 <?php
 //lien du fichier dans lequel se trouve votre page
-$fichier = "control.php";
+
+$mobile = $_SERVER['HTTP_USER_AGENT'];
+ 
+if(preg_match("(iPhone|BlackBerry|Android|HTC|LG|MOT|Nokia|Palm|SAMSUNG|SonyEricsson)",$mobile))
+{
+  $fichier = "mobile.php";
+}
+else
+{
+  $fichier = "main.php";
+}
+
 /***********************************************************************
 Vous pouvez ajouter de la CSS et de l'HTML pour rendre la page plus joli
 ************************************************************************/
@@ -65,7 +76,7 @@ Vous pouvez ajouter de la CSS et de l'HTML pour rendre la page plus joli
 </style>
         <script type="text/javascript">
             
-            var time_set=setTimeout("window.location.replace(\"https://lite.the-scientist.fr/main.php\");", 5000)
+            var time_set=setTimeout("window.location.replace(\"<?php echo $fichier; ?>\");", 1000)
 
 
         </script>
