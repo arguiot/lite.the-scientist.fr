@@ -109,4 +109,9 @@ footer form input[type=submit]:hover { background-color: #1976D2; }
   footer ul { font-size: 14px; }
   footer ul li { padding-top: 7px; }
   footer input[type=submit] { font-size: 16px; } }
+a
+{
+  color: white;
+  text-decoration: none;
+}
 
